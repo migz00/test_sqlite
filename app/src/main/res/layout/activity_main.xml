@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/et_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter a Name"
+        android:layout_toRightOf="@+id/tv_input"
+        android:layout_toLeftOf="@+id/btn_input"/>
+    <Button
+        android:id="@+id/btn_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input"
+        android:layout_alignParentRight="true"/>
+    <ListView
+        android:id="@+id/lv_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_input"
+        android:layout_above="@+id/btn_clear">
+
+    </ListView>
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="CLEAR"/>
+
+</RelativeLayout>
